@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purat Site – Modern Digital Marketplace</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-family='sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EP%3C/text%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%231E6FFF;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%239B5CFF;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              primary: '#1E6FFF',
+              secondary: '#00E5FF',
+              accent: '#9B5CFF',
+              dark: '#0f172a',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              glow: {
+                '0%': { boxShadow: '0 0 5px #1E6FFF, 0 0 10px #1E6FFF' },
+                '100%': { boxShadow: '0 0 20px #00E5FF, 0 0 30px #00E5FF' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for futuristic feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #1E6FFF, #9B5CFF);
+        border-radius: 4px;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2",
+    "qrcode": "https://esm.sh/qrcode@1.5.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#F9FBFF] dark:bg-[#050510] text-slate-800 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
